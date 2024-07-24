@@ -36,4 +36,6 @@ def predict():
     prediction = model.predict(features)[0]
 
     return jsonify({'price': prediction})
+    if __name__ == '__main__':
+    app.run(debug=True)
 
